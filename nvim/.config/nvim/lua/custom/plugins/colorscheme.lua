@@ -1,12 +1,4 @@
 return {
-  {
-    lazy = false,
-    priority = 1000,
-    dir = '~/plugins/colorbuddy.nvim',
-    config = function()
-      vim.cmd.colorscheme 'catppuccin-mocha'
-    end,
-  },
   'Mofiqul/vscode.nvim',
   'morhetz/gruvbox',
   'mhinz/vim-janah',
@@ -24,5 +16,12 @@ return {
       }
     end,
   },
-  { 'catppuccin/nvim', name = 'catppuccin', priority = 1000 },
+  {
+    'catppuccin/nvim',
+    name = 'catppuccin',
+    priority = 1000,
+    init = function()
+      vim.cmd.colorscheme 'catppuccin-mocha'
+    end,
+  },
 }

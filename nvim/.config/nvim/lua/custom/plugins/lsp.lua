@@ -165,18 +165,7 @@ return { -- LSP Configuration & Plugins
       --    https://github.com/pmizio/typescript-tools.nvim
       --
       -- But for many setups, the LSP (`tsserver`) will work just fine
-      tsserver = {},
       --
-      slint_lsp = {},
-      omnisharp = {
-        cmd = { 'dotnet', vim.fn.stdpath 'data' .. '/mason/packages/omnisharp/libexec/OmniSharp.dll' },
-        enable_import_completion = true,
-        organize_imports_on_format = true,
-        enable_roslyn_analyzers = true,
-        root_dir = function()
-          return vim.loop.cwd() -- current working directory
-        end,
-      },
       lua_ls = {
         -- cmd = {...},
         -- filetypes = { ...},

@@ -16,3 +16,10 @@ station *name* connect *SSID*
 
 Then exit and run 
 archinstall
+
+
+once thats done, reboot, then:
+
+systemctl enable gdm.service
+
+systemctl start gdm.service
