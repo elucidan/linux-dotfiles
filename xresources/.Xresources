@@ -1,0 +1,5 @@
+Xft.dpi:200
+Xft.antialias: 1
+rofi.dpi: 192
+#*dpi: 200
+#xft.dpi: 200
