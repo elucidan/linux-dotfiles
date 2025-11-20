@@ -20,7 +20,6 @@ require('telescope').setup {
 -- Enable Telescope extensions if they are installed
 pcall(require('telescope').load_extension, 'fzf')
 pcall(require('telescope').load_extension, 'ui-select')
-pcall(require('telescope').load_extension, 'flutter')
 
 -- See `:help telescope.builtin`
 
@@ -35,7 +34,6 @@ vim.keymap.set('n', '<leader>fd', builtin.diagnostics, { desc = '[S]earch [D]iag
 vim.keymap.set('n', '<leader>fr', builtin.resume, { desc = '[S]earch [R]esume' })
 vim.keymap.set('n', '<leader>f.', builtin.oldfiles, { desc = '[S]earch Recent Files ("." for repeat)' })
 vim.keymap.set('n', '<leader><leader>', builtin.buffers, { desc = '[ ] Find existing buffers' })
-vim.keymap.set('n', '<leader>r', require('telescope').extensions.flutter.commands, { desc = 'Open command Flutter' })
 
 -- Slightly advanced example of overriding default behavior and theme
 vim.keymap.set('n', '<leader>/', function()
@@ -59,7 +57,3 @@ end, { desc = '[S]earch [/] in Open Files' })
 vim.keymap.set('n', '<leader>fn', function()
   builtin.find_files { cwd = vim.fn.stdpath 'config' }
 end, { desc = '[F]ind [N]eovim files' })
-
-vim.keymap.set('n', '<leader>cd', function()
-  builtin.find_files { cwd = '/Users/elucidan/development/flutter/examples/api/lib' }
-end, { desc = '[C]ode [D]ocs' })

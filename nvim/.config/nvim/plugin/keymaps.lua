@@ -25,6 +25,10 @@ vim.opt.clipboard = 'unnamedplus'
 vim.keymap.set('n', '-', '<CMD>Oil<CR>', { desc = 'Open parent directory' })
 -- Enable break indent
 vim.opt.breakindent = true
+vim.diagnostic.enable = true
+vim.diagnostic.config {
+  virtual_lines = true,
+}
 
 -- Save undo history
 vim.opt.undofile = true
