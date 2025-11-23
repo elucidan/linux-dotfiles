@@ -9,7 +9,7 @@ sudo pacman -S --needed wayland
 sudo pacman -S hyprland
 sudo pacman -S hyprpaper
 curl -sS https://starship.rs/install.sh | sh
-sudo pacman -S alacritty
+sudo pacman -S ghostty
 sudo pacman -S dolphin
 sudo pacman -S wofi
 sudo pacman -S waybar
